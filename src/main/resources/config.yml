@@ -1,0 +1,124 @@
+# <-- File with messages for plugin: HubPlugin-1.0.-SNAPSHOT --> #
+
+messages_configuration:
+
+  # <--- Commands configuration --> #
+
+  # <!-- GameMode configuration --!>
+  gamemode_options:
+    permission: "hub.gamemode.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    usage: "&aUsage: /gamemode [mode in number>, [0|1|2|3] or [playerNickname]."
+    mode_not_found: "&cSorry: Mode gamemode not found."
+    change_mode_forplayer: "&aSucess: changed your gamemode on: {GAMEMODE}."
+    player_not_found: "&cSorry: Player not found."
+    change_players_mode_toadmin: "&aSucess: change gamemode player: {PLAYER} on: {GAMEMODE}."
+    changed_your_mode_toplayer: "&aSucess: your gamemode changed on: {GAMEMODE} through: {ADMIN}. "
+
+  # <!-- SetSpawn configuration --!>
+  setspawn_options:
+    permission: "hub.setspawn.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    setspawn: "&aSucess: setspawn on coordinate: X: {X}, Y: {Y}, Z: {Z}." # [ Acess Variables: {X} - X, {Y} - y, {Z} - z ] #
+
+  # <!-- Teleport configuration --!>
+  teleport_options:
+    permission: "hub.teleport.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    player_not_found: "&cSorry: Player not found."
+    sucess_teleported: "&aSucess: teleported to player: {PLAYER}."
+
+  # <!-- TeleportHere configuration --!>
+  teleporthere_options:
+    permission: "hub.teleport.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    player_not_found: "&cSorry: Player not found."
+    sucess_teleportedhere: "&aSucess: teleportedhere player: {PLAYER}"
+
+  # <!-- WhiteList configuration --!>
+  whitelist_options:
+    permission: "hub.whitelist.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    usage: "&aUsage: /whitelist [on|off}, [add|remove], [playerNickName], [list]."
+    mode_not_found: "&cSorry: Mode not found."
+    status: true
+    list_added_towhitelist:
+      - "vFeesT"
+    isenable: "&cSorry: Whitelist is enabled."
+    enable: "&aSucess: Whitelist is enable."
+    isdisable: "&cSorry: Whitelist is disabled."
+    disable: "&aSucess: Whitelist is disable."
+    isadded: "&cSorry: Player is added to whitelist"
+    add: "&aSucess: Player: {PLAYER} added to whitelist."
+    isremoved: "&cSorry: Player is removed."
+    remove: "&aSucess: Player: {PLAYER} is removed with whitelist."
+    list: "&aList players on whitelist: {LIST}:"
+    kick_reason_whitelist_enable: "{N}{N}&cSorry: Whitelist is enabled.{N}{N}"
+
+    # <!-- Slot configuration --!>
+  slot_options:
+    permission: "hub.gamemode.permission"
+    permission_message: "&cSorry: You do not have permission to execute this command."
+    usage: "&aUsage: /slot [number]"
+    slot_max: 1000
+    it_is_notnumber: "&cSorry: It not is number."
+    status_and_set:
+      - "&aStatus: {SLOT}/{ONLINE}"
+      - "&aSucess: set status on: {SLOT}"
+    kick_reason_serverisfull: "{N}{N}&cServer is full sorry..{N}{N}"
+
+  # <--- Listener configuration --> #
+  playerjoin_options:
+    setjoinmessage: "&ePlayer: {PLAYER} joined on the server."
+    setjoinmessage-status: true
+    sendclearmessage-status: true
+    sendwelcomemessage:
+      - "Welcome on hub: {PLAYER}"
+    sendwelcomemessage_title: "&c&l* HUB-1.0-SNAPSHOT *"
+    sendwelcomemessage_subtitle: "&aWelcome on hub." # [ Acess Variables: {PLAYER} - player ] #
+    sendwelcomemessage_titles-status: true
+    setslothelditem: 4
+    allowfight-status: true
+    sendrootjoin-status: true
+    sendrootjoin_nickname:
+      - "vFeesT"
+    sendrootjoin: "&cOn server join root: {ADMIN}"
+
+  playerquit_options:
+    setquitmessage: "&ePlayer: {PLAYER} leave with server."
+    setquitmessage-status: true
+
+  prefix_options:
+    prefix: "&cOwner: {PLAYER} send: {MESSAGE}"
+
+  blocking_interact_options:
+    sendonchat: "&cSorry: Tou can not write on the hub."
+    blockbreak: "&cSorry: You can not destroy the blocks on the hub."
+    blockplace: "&cSorry: You can not place the blocks on the hub."
+    dropitem: "&cSorry: You can not dispose of items per hub"
+    unkowncommand: "&cSorry: Specified command does not exist."
+    cancelcommands: "&cSorry: Commands blocked."
+    damage: "&cSorry: Damage is blocked on the hub."
+    commandallow:
+      - "register"
+      - "reg"
+      - "login"
+      - "l"
+      - "changepassword"
+      - "changepass"
+    commandsallow_message: "&cSorry: Command allow: /register, /reg, /login, /l, /changepassword, /changepass."
+  item_selection_mode_options:
+    material: NETHER_STAR
+    slot_in_inventory: 4
+    name: "&aSelection Mode"
+    lore:
+      - "&aItem for selection mode and join on the server."
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+name: HubPlugin-1.0-SNAPSHOT
+main: dev.noyzys.arhelion.hub.HubPlugin
+author: dev.N0yZyS
+version: 1.0-SNAPSHOT
+description: "* Plugin for ArHelion.PL - HubPlugin-1.0-SNAPSHOT *"
